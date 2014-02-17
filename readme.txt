@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: CodeinWP, ReadyThemes
+Contributors: codeinwp
 Tags:  review, rating, posts, widget, review blogger, review blogging, affiliate
 Author URI: http://codeinwp.com 
 Requires at least: 3.5
