@@ -1,6 +1,6 @@
 <?php
 	function cwp_pac_before_content($content) {
-			global $post;
+			global $post; 
 			$return_string  = '<section id="review-statistics" class="article-section">
                             
                         <div class="review-wrap-up hreview clearfix">
@@ -44,7 +44,7 @@
                                 </div><!-- end .chart -->
                             </div><!-- end .review-wu-grade -->
                             <div class="review-wu-bars">';
-                                 if (!empty($option1_content) && !empty($option1_grade)) {  
+                                 if (!empty($option1_content) && !empty($option1_grade) &&  strtoupper($option1_content) != 'DEFAULT FEATURE 1') {  
                                     $return_string .= '<div class="rev-option" data-value='.$option1_grade.'>
                                         <div class="clearfix">
                                             <h3>'. $option1_content.'</h3>
@@ -54,7 +54,7 @@
                                     </div>';
                                  }
                                  
-                                 if (!empty($option2_content) && !empty($option2_grade)) {  
+                                 if (!empty($option2_content) && !empty($option2_grade) && strtoupper($option2_content) != 'DEFAULT FEATURE 2') {  
                                     $return_string .= '<div class="rev-option" data-value='.$option2_grade.'>
                                         <div class="clearfix">
                                             <h3>'. $option2_content.'</h3>
@@ -64,7 +64,7 @@
                                     </div>';
                                  } 
                                  
-                                 if (!empty($option3_content) && !empty($option3_grade)) {  
+                                 if (!empty($option3_content) && !empty($option3_grade)&& strtoupper($option3_content) != 'DEFAULT FEATURE 3') {  
                                     $return_string .= '<div class="rev-option" data-value='.$option3_grade.'>
                                         <div class="clearfix">
                                             <h3>'. $option3_content.'</h3>
@@ -74,7 +74,7 @@
                                     </div>';
                                 }
                                  
-                                 if (!empty($option4_content) && !empty($option4_grade)) {  
+                                 if (!empty($option4_content) && !empty($option4_grade) && strtoupper($option4_content) != 'DEFAULT FEATURE 4') {  
                                     $return_string .= '<div class="rev-option" data-value='.$option4_grade.'>
                                         <div class="clearfix">
                                             <h3>'. $option4_content.'</h3>
@@ -83,7 +83,7 @@
                                         <ul class="clearfix"></ul>
                                     </div>'; 
                                  }
-                                 if (!empty($option5_content) && !empty($option5_grade)) {  
+                                 if (!empty($option5_content) && !empty($option5_grade) && strtoupper($option5_content) != 'DEFAULT FEATURE 5') {  
                                     $return_string .= '<div class="rev-option" data-value='.$option5_grade.'>
                                         <div class="clearfix">
                                             <h3>'. $option5_content.'</h3>
@@ -101,13 +101,16 @@
                                             
                                             
                                             for($i=1; $i<6; $i++) {
-                                                ${"pro_option_".$i} = get_post_meta($post->ID, "cwp_option_".$i."_pro", true); if(empty(${"pro_option_".$i})) { ${"pro_option_".$i} = __("Default Pro Option ".$i, "cwp"); } 
+                                                ${"pro_option_".$i} = get_post_meta($post->ID, "cwp_option_".$i."_pro", true); 
+												if(empty(${"pro_option_".$i})  ) { 
+													${"pro_option_".$i} = "" ; 
+												} 
                                             }
                                             for($i=1; $i<6; $i++) {
-                                                ${"cons_option_".$i} = get_post_meta($post->ID, "cwp_option_".$i."_cons", true); if(empty(${"cons_option_".$i})) { ${"cons_option_".$i} = __("Default Cons Option ".$i, "cwp"); } 
+                                                ${"cons_option_".$i} = get_post_meta($post->ID, "cwp_option_".$i."_cons", true); if(empty(${"cons_option_".$i})) { ${"cons_option_".$i} = ""; } 
                                             }
                                  
-                               $return_string .=  '<h2>'.__(cwppos("cwp_pros_text"), "cwp").'</h2>
+                               $return_string .=  '<h2>'.__(cwppos("cwppos_pros_text"), "cwp").'</h2>
                                 <ul>';
 									
 									for($i=1;$i<=5;$i++){
@@ -118,7 +121,7 @@
                            	$return_string .= '     </ul>
                             </div><!-- end .pros -->
                             <div class="cons">';
-                              	$return_string .=' <h2>'.__(cwppos("cwp_cons_text"), "cwp").'</h2>  <ul>';
+                              	$return_string .=' <h2>'.__(cwppos("cwppos_cons_text"), "cwp").'</h2>  <ul>';
 								
 								for($i=1;$i<=5;$i++){
 										if(!empty(${"cons_option_".$i})) { 

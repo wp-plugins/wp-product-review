@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Product Review 
 Description:  Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
-Version: 1.0
+Version: 1.1
 Author: CodeInWP
 Author URI:  http://codeinwp.com/
 Requires at least: 3.5
@@ -30,7 +30,8 @@ include "admin/functions.php";
        wp_enqueue_style( 'cwp-pac-frntpage-stylesheet', plugins_url('css/frontpage.css', __FILE__) ); 
        wp_enqueue_style( 'jqueryui', plugins_url('css/jquery-ui.css', __FILE__) ); 
        wp_enqueue_style( 'cwp-pac-fontawesome-stylesheet', plugins_url('css/font-awesome.min.css', __FILE__) ); 
-       wp_enqueue_script( 'jqueryui');
+         wp_enqueue_script( 'jquery-ui-core' );
+		wp_enqueue_script( 'jquery-ui-slider' );
        wp_enqueue_script( 'pie-chart', plugins_url('javascript/pie-chart.js', __FILE__),array("jquery"),"20140101",true );
        wp_enqueue_script( 'cwp-pac-main-script', plugins_url('javascript/main.js', __FILE__),array("jquery",'pie-chart'),"20140101",true );
   }
