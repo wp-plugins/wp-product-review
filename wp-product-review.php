@@ -2,12 +2,12 @@
 /*
 Plugin Name: WP Product Review 
 Description:  Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
-Version: 1.1
+Version: 1.2
 Author: CodeInWP
 Author URI:  http://codeinwp.com/
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 1.9
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
