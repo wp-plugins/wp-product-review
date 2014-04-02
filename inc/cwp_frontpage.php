@@ -141,7 +141,7 @@
                   
                        
                                 $return_string .= '<div class="affiliate-button">
-                                    <a href="'.$affiliate_link.'"><span>'. $affiliate_text.'</span> </a> 
+                                    <a href="'.$affiliate_link.'" rel="nofollow" target="_blank"><span>'. $affiliate_text.'</span> </a> 
                                 </div><!-- end .affiliate-button -->';
 							}
 							
