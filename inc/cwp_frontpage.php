@@ -33,13 +33,13 @@
                                     <div class="percentage" data-percent="';
 								
                                         $overall_score = "";
-                                        $iter = "";
+                                        $iter = 0;
                                         if(!empty($option1_grade)) { $overall_score += $option1_grade; $iter++; } 
                                         if(!empty($option2_grade)) { $overall_score += $option2_grade; $iter++; }
                                         if(!empty($option3_grade)) { $overall_score += $option3_grade; $iter++; }
                                         if(!empty($option4_grade)) { $overall_score += $option4_grade; $iter++; }
-                                        if(!empty($option5_grade)) { $overall_score += $option5_grade; $iter++; }
-                                        $overall_score = $overall_score / $iter;
+                                        if(!empty($option5_grade)) { $overall_score += $option5_grade; $iter++; }										if($iter == 0){											$overall_score = 0;										}else{ 
+											$overall_score = $overall_score / $iter;										}
                                   $return_string .= $overall_score.'"><span class="rating"></span></div>
                                 </div><!-- end .chart -->
                             </div><!-- end .review-wu-grade -->
