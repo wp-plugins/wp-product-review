@@ -12,7 +12,7 @@ function cwp_review_meta_box_callback( $post )
 {
 
 
-	wp_nonce_field( 'cwp_product_review_meta_box_nonce', 'meta_box_nonce' );
+	wp_nonce_field( 'cwp_product_review_meta_box_nonce', 'cwp_meta_box_nonce' );
 	$cwp_review_stored_meta = get_post_meta( $post->ID );
     $check = isset( $cwp_review_stored_meta['cwp_meta_box_check'][0] ) ? esc_attr( $cwp_review_stored_meta['cwp_meta_box_check'][0] ) : "No";  
     
@@ -180,7 +180,7 @@ function cwp_review_meta_boxes_save($post_id)
 {  	
 	$is_autosave = wp_is_post_autosave( $post_id );
     $is_revision = wp_is_post_revision( $post_id );
-    $is_valid_nonce = ( isset( $_POST[ 'meta_box_nonce' ] ) && wp_verify_nonce( $_POST[ 'meta_box_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+    $is_valid_nonce = ( isset( $_POST[ 'cwp_meta_box_nonce' ] ) && wp_verify_nonce( $_POST[ 'cwp_meta_box_nonce' ], 'cwp_product_review_meta_box_nonce' ) ) ? 'true' : 'false';
  
     if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
         return;

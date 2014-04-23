@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Product Review 
 Description:  Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
-Version: 1.5
+Version: 1.6
 Author: CodeInWP
 Author URI:  http://codeinwp.com/
 Requires at least: 3.5
@@ -10,7 +10,7 @@ Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
+*/if (wp_get_theme() !== "Reviewgine Affiliate PRO") {
 include "admin/functions.php";
 include "inc/cwp_metabox.php";
 include "inc/cwp_frontpage.php";
@@ -95,5 +95,5 @@ include "inc/cwp_comment.php";
    }
  add_action('wp_head','cwppos_dynamic_stylesheet');
  add_action( 'admin_init', 'cwppos_pac_admin_init' );
- add_action( 'init', 'cwppos_pac_init' ); 
+ add_action( 'init', 'cwppos_pac_init' ); }
 ?>
