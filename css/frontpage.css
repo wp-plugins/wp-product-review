@@ -55,7 +55,7 @@ font-weight: normal;
 #review-statistics  .review-wu-bars h3, .review-wu-bars span { font-family: "Open Sans"; font-size: 13px !important;  text-transform: uppercase;  font-style: italic; line-height: 18px; margin: 0; padding: 0;  }
 #review-statistics  .review-wu-bars span { text-align: right; float: right; line-height: 2;}
 #review-statistics  .review-wu-bars { width: 90%; padding: 0 5% 10px 5%; border:1px solid #e6e6e6; border-left: none; border-bottom: none; }
-#review-statistics  .review-wu-bars ul { margin: 0; margin-left: 0px !important; width: 100% !important; }
+#review-statistics  .review-wu-bars ul { margin: 0; margin-left: 0px !important; width: 100% !important; padding-left:0px !important; }
 #review-statistics  .review-wu-bars ul li {display: inline-block;  height: 6px;  margin-right: 2%; width: 8.2%; float:left; }
 #review-statistics  .review-wu-bars ul li:nth-child(10) { margin: 0 !important;}
 #review-statistics  .review-wu-bars .rev-option div > * { display: inline-block; }
