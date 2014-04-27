@@ -6,7 +6,7 @@ Plugin Name: WP Product Review
 
 Description:  Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
 
-Version: 2.0
+Version: 2.1
 
 Author: CodeInWP
 
