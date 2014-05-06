@@ -6,7 +6,7 @@ Plugin Name: WP Product Review
 
 Description: The highest rated and most complete review plugin, now with rich snippets support. Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
 
-Version: 2.2
+Version: 2.2.1
 
 Author: CodeInWP
 
@@ -227,7 +227,8 @@ add_action('wp_head', 'cwppos_pac_print');
 
 add_action('wp_head','cwppos_dynamic_stylesheet');
 add_action( 'admin_init', 'cwppos_pac_admin_init' );
-
+if (!class_exists('TAV_Remote_Notification_Client')) {
 require( 'inc/class-remote-notification-client.php' );
+}
 $notification = new TAV_Remote_Notification_Client( 36, '71a28628279f6d55', 'http://themeisle.com/?post_type=notification' );
 }
