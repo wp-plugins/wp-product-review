@@ -403,7 +403,7 @@ function cwp_review_meta_boxes_save($post_id)
 
     if( isset( $_POST[ 'cwp_product_affiliate_link' ] ) ) {
 
-        update_post_meta( $post_id, 'cwp_product_affiliate_link', sanitize_text_field( $_POST[ 'cwp_product_affiliate_link' ] ) );
+        update_post_meta( $post_id, 'cwp_product_affiliate_link', esc_url( $_POST[ 'cwp_product_affiliate_link' ] ) );
 
     }
 

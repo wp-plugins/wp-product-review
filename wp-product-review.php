@@ -6,7 +6,7 @@ Plugin Name: WP Product Review
 
 Description: The highest rated and most complete review plugin, now with rich snippets support. Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links .
 
-Version: 2.2.1
+Version: 2.2.3
 
 Author: CodeInWP
 
@@ -80,7 +80,7 @@ include "inc/cwp_comment.php";
 
 	global $post; 
    		//echo get_post_meta($post->ID, "cwp_rev_product_name", true);
-	if (get_post_meta($post->ID, "cwp_rev_product_name", true)!="") {
+	if (get_post_meta($post->ID, "cwp_rev_product_name", true)!="" || get_post_meta($post->ID, "cwp_rev_product_image", true)!="") {
 
 		wp_print_styles('cwp-pac-frontpage-stylesheet');
 		wp_print_styles('jqueryui');
