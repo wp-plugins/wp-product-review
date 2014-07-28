@@ -36,7 +36,7 @@
 
 		public static function init(){
 
-			self::$admin_page_menu_name 	 = "WP Product Review Options";
+			self::$admin_page_menu_name 	 = "Product Review";
 
 			self::$admin_page_title 		 = "WP Product Review Options";
 
@@ -264,7 +264,23 @@
 
 								 "default"=>"Cons"
 
-							   ) 
+							   ),
+
+								array(
+									"type"=>"color",
+									"name"=>"Review box border",
+									"description"=>"Select the border color to be used on the review box",
+									"id"=>"cwppos_reviewboxbd_color",
+									"default"=>"#3BAEDA"
+								),
+
+								array(
+									"type"=>"input_text",
+									"name"=>"Review box border width",
+									"description"=>"Select the width in pixels of the top border of the review box",
+									"id"=>"cwppos_reviewboxbd_width",
+									"default"=>"5"
+								)
 
 							
 
@@ -464,7 +480,55 @@
 
 							 )
 
-						) 
+						),
+						array(
+
+							 "type"=>"tab",
+
+							 "name"=>"Upgrade to Pro",
+
+							 "options"=>array(
+
+								
+
+								array(
+
+									"type"=>"title",
+
+									"name"=>"In order to use the PRO features, you have 2 options :"
+
+								),
+								array(
+
+									"type"=>"select",
+
+									"name"=>"Display the Powered by link ?",
+
+									"description"=>"If you wanna use our Preloader functionality without paying for the plugin, just activate this box and a nofollow link will be added to your review posts",
+
+									"id"=>"cwppos_show_poweredby",
+
+									"options"=>array("yes"=>"Yes","no"=>"No"),
+
+									"default"=>"no"
+
+								),
+								array(
+
+									"type"=>"button",
+
+									"name"=>"Buy the PRO version ",
+
+									"description"=>"Buy the PRO version now for only $9.95",
+
+									"id"=>"cwppos_show_buypro",
+
+									
+									"default"=>"no"
+
+								)
+								)
+							 )
 
 
 
