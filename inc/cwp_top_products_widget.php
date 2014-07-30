@@ -66,9 +66,8 @@ array( 'description' => __( 'This widget displays the top products based on thei
 
 			'posts_per_page'=> $no_items, // limit it to the specified no of posts
 
-			'post_type'		=> array('post'),
-
-			'review_category' => $cwp_tp_category, // limit it to the specified category
+			'category' => $cwp_tp_category, // limit it to the specified category
+			'meta_key' => 'option_overall_score',
 
 				'meta_query'             => array(
 
@@ -78,9 +77,12 @@ array( 'description' => __( 'This widget displays the top products based on thei
 
 			'value'     => 'Yes',
 
+
 		),
 
-	),	
+		),	
+		'orderby'	=> 'meta_value_num',
+		'order'		=> 'DESC'
 
 		);
 
