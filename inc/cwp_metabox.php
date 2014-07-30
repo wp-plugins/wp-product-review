@@ -595,7 +595,7 @@ function cwp_review_meta_boxes_save($post_id)
 
     for($i=1; $i<6; $i++) {
 
-        ${"option".$i."_grade"} = get_post_meta($post->ID, "option_".$i."_grade", true); 
+        ${"option".$i."_grade"} = get_post_meta($post_id, "option_".$i."_grade", true); 
 
     }
 
@@ -617,7 +617,8 @@ function cwp_review_meta_boxes_save($post_id)
     }else{ 
         $overall_score = $overall_score / $iter;
     }
-    update_post_meta($post->ID, 'option_overall_score', $overall_score/100);
+    update_post_meta($post_id, 'option_overall_score', $overall_score/10);
+    
 
 
 }
