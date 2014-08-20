@@ -1,9 +1,6 @@
 <?php 
-
 /**
-
  * CWP - Top Producs Widget 
-
  */
 
 
