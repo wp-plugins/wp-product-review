@@ -5,7 +5,7 @@
 
 
 
-class cwp_top_products_widget extends WP_Widget {
+class cwp_latest_products_widget extends WP_Widget {
 
 
 
@@ -13,15 +13,15 @@ function __construct() {
 
 parent::__construct(
 
-'cwp_top_products_widget', 
+'cwp_latest_products_widget', 
 
-__('CWP Top Products Widget', 'cwppos'), 
+__('CWP Latest Products Widget', 'cwppos'), 
 
 
 
 // Widget description
 
-array( 'description' => __( 'This widget displays the top products based on their rating.', 'cwppos' ), ) 
+array( 'description' => __( 'This widget displays the latest products.', 'cwppos' ), ) 
 
 );
 
@@ -78,7 +78,7 @@ array( 'description' => __( 'This widget displays the top products based on thei
 		),
 
 		),	
-		'orderby'	=> 'meta_value_num',
+		'orderby'	=> 'date',
 		'order'		=> 'DESC'
 
 		);
@@ -281,10 +281,10 @@ array( 'description' => __( 'This widget displays the top products based on thei
 
 // Register and load the widget
 
-function cwp_load_top_products_widget() {
+function cwp_load_latest_products_widget() {
 
-	register_widget( 'cwp_top_products_widget' );
+	register_widget( 'cwp_latest_products_widget' );
 
 }
 
-add_action( 'widgets_init', 'cwp_load_top_products_widget' );
+add_action( 'widgets_init', 'cwp_load_latest_products_widget' );

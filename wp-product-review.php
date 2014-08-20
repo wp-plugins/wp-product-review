@@ -20,6 +20,7 @@ if (wp_get_theme() !== "Reviewgine Affiliate PRO") {
     include "inc/cwp_metabox.php";
     include "inc/cwp_frontpage.php";
     include "inc/cwp_top_products_widget.php";
+    include "inc/cwp_latest_products_widget.php";
     include "inc/cwp_comment.php";
     /*
 Loading the stylesheet for admin page.
