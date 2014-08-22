@@ -43,6 +43,14 @@ For updates follow https://twitter.com/ready_themes.
 
 == Changelog ==
 
+**New in v2.3**
+
+- Fixed js errors
+
+**New in v2.29**
+
+- Fixed upgrade to pro issue
+
 **New in v2.28**
 
 - Fixed translation issues
