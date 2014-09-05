@@ -1,4 +1,4 @@
-﻿=== Plugin Name ===
+=== Plugin Name ===
 Contributors: codeinwp
 Tags:  review, rating, posts, widget, review blogger, review blogging, affiliate, product reviews
 Author URI: http://codeinwp.com 
@@ -40,6 +40,7 @@ For updates follow https://twitter.com/ready_themes.
 = Translations =
 
 * sk_SK translation by Patrik Žec (PATWIST) of http://patwist.com
+* fr_FR translation by Jacques Soule of http://wordpress-pour-vous.com/
 
 == Changelog ==
 
