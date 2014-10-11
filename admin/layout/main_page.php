@@ -9,11 +9,11 @@
 
 			    <img class="theme_options_logo" src="<?php echo plugins_url( 'img/logo.png' , __FILE__ ) . ''; ?>" alt="<?php echo cwppos_config('admin_page_header'); ?>"> 
 				
-				<a href="http://www.readythemes.com/wp-product-review/?r=wporg" class="read_docs button" target="_blank" style="text-decoration: none;"><?php _e("Visit Plugin Page", "cwp"); ?></a>
+				<a href="https://themeisle.com/plugins/wp-product-review-lite/" class="read_docs button" target="_blank" style="text-decoration: none;"><?php _e("Visit Plugin Page", "cwp"); ?></a>
 				
-				<a href="http://www.readythemes.com/category/themes/?r=wporg"  class="read_docs button" target="_blank" style="color:red; text-decoration: none; "><?php _e("Recommended Review Themes", "cwp"); ?></a>
+				<a href="https://themeisle.com/allthemes/"  class="read_docs button" target="_blank" style="color:red; text-decoration: none; "><?php _e("Recommended Review Themes", "cwp"); ?></a>
 				
-				<a href="http://www.readythemes.com/contact/" target="_blank" class="read_docs button" style="text-decoration: none;"><?php _e("Contact us", "cwp"); ?></a>
+				<a href="https://themeisle.com/contact/" target="_blank" class="read_docs button" style="text-decoration: none;"><?php _e("Contact us", "cwp"); ?></a>
 
 				</h2>
 			</div>

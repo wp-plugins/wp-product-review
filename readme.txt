@@ -57,7 +57,7 @@ Alternatively you can also follow the following steps to install the WP Product 
 == Frequently Asked Questions ==
 
 If you have any questions please get in touch with us at,
-http://www.readythemes.com/contact/?r=wporg
+https://themeisle.com/contact
 
 == Screenshots ==
 
@@ -67,4 +67,4 @@ http://www.readythemes.com/contact/?r=wporg
 
 for more you can check out 
 
-http://www.readythemes.com/wp-product-review/?r=wporg
+https://themeisle.com/plugins/wp-product-review-lite/
