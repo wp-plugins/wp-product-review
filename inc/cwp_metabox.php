@@ -60,7 +60,7 @@ function cwp_review_meta_box_callback( $post )
 
 	<div class="review-settings-notice">
 		<h4><?php _e("Product Options Setting", "cwp"); ?></h4>
-		<div class="preloadInfo"><?php _e("Insert your options and their grades. Grading must be done <b><i>from 0 to 100</i></b>. For more information about this, please consult <a href='http://www.readythemes.com/reviewgine-lite-tutorial/'>Reviewgine Theme Documentation</a>.", "cwp"); ?></div>
+		<div class="preloadInfo"><?php _e("Insert your options and their grades. Grading must be done <b><i>from 0 to 100</i></b>. For more information about this, please consult <a href='https://themeisle.com/plugins/wp-product-review-lite/'>this</a>.", "cwp"); ?></div>
  
 	</div><!-- end .review-settings-notice -->
 	<div class="review-settings-group">
