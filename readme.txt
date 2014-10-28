@@ -9,8 +9,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Easily turn your basic posts into in-depth reviews with ratings, pros and cons and affiliate links. Enhance the relationship between search engines and your site by telling more. Help search engines -like Google- to understand your content better!
- 
+Easily turn your basic posts into in-depth reviews with ratings, pros and cons, affiliate links, rich snippets and user reviews.
 == Description ==
 
 
