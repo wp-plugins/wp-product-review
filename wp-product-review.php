@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Product Review 
 Description: The highest rated and most complete review plugin, now with rich snippets support. Easily turn your basic posts into in-depth reviews.
-Version: 2.5.1
+Version: 2.5.2
 Author: Themeisle
 Author URI:  https://themeisle.com/
 Plugin URI: https://themeisle.com/plugins/wp-product-review-lite/
@@ -138,12 +138,13 @@ Loading the stylesheet for admin page.
                 $feat_image = get_post_meta($id, "cwp_product_affiliate_link", true);
                 $lightbox = "";
             }
+            
 
-            $return_string .= '<a href="'.$feat_image.'" '.$lightbox.'><img  src="'.$product_image.'" alt="'. get_post_meta($id, "cwp_rev_product_name", true).'" class="photo photo-wrapup"/></a>';
-        
+                    
         } else {
-            $return_string .= "<p class='no-featured-image'>".__("No image added.", "cwppos")."</p>";
+            $product_image = $feat_image;
         }
+        $return_string .= '<a href="'.$feat_image.'" '.$lightbox.'><img  src="'.$product_image.'" alt="'. get_post_meta($id, "cwp_rev_product_name", true).'" class="photo photo-wrapup"/></a>';
 
         $rating = cwppos_calc_overall_rating($id);
        
